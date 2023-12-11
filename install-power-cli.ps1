@@ -6,7 +6,7 @@ Update-Module -name PowershellGet
 #turn off certificate warning
 Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:$false
 #install power-cli
-Install-Module -Name VMware.PowerCLI -Scope AllUsers
+Install-Module -Name VMware.PowerCLI -Scope AllUsers -SkipPublisherCheck
 #update power-cli
 Update-Module -Name VMware.PowerCLI
 #uninstall power-cli
