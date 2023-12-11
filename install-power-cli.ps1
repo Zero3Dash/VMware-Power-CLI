@@ -7,6 +7,8 @@ Update-Module -name PowershellGet
 Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:$false
 #install power-cli
 Install-Module -Name VMware.PowerCLI -Scope AllUsers -SkipPublisherCheck
+#import power-cli module
+Import-Module VMware.PowerCLI
 #update power-cli
 Update-Module -Name VMware.PowerCLI
 #uninstall power-cli

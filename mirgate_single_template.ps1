@@ -25,7 +25,7 @@ $templateLocation = $template | Get-View | Select-Object -ExpandProperty Config 
 
 # Build the new template location
 $newTemplateLocation = $templateLocation
-$newTemplateLocation = $destinationDs.ExtensionData.MoRef
+$newTemplateLocation.destination = $destinationDs.ExtensionData.MoRef
 
 # Move the template to the new location
 Move-Template -Template $template -Datastore $destinationDs
