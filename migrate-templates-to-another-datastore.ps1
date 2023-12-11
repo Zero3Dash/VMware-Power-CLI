@@ -1,3 +1,9 @@
+#import power-cli module
+Import-Module VMware.PowerCLI
+
+# Connect to vCenter Server
+Connect-VIServer -Server YourVCenterServer -User YourUsername -Password YourPassword
+
 # Define variables
 $sourceDatastore = "Source Datastore"
 $destinationDatastore = "Destination Datastore"
