@@ -1,0 +1,2 @@
+$events = Get-VIEvent -MaxSamples 1000000000
+foreach ($event in $events) {if ($event.fullFormattedMessage -like "*resource pool") {Write-Host $event.fullFormattedMessage + $event.createdTime + $event.UserName}}
