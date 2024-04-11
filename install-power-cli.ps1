@@ -1,3 +1,6 @@
+Update-Module
+Get-Module
+#
 Install-Module -name PackageManagement -force -skippublishercheck
 Update-Module -name PackageManagement
 Install-Module -name PowershellGet -force -SkipPublisherCheck
