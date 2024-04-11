@@ -1,5 +1,8 @@
 Update-Module
 Get-Module
+Install-PackageProvider -Name NuGet -Force
+Install-Module PowerShellGet -AllowClobber -Force
+Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 #
 Install-Module -name PackageManagement -force -skippublishercheck
 Update-Module -name PackageManagement
